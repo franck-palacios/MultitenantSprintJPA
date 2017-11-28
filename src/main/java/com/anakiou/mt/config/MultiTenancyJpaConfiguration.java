@@ -1,5 +1,6 @@
 package com.anakiou.mt.config;
 
+import com.anakiou.mt.domain.Consulta;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -16,8 +17,6 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-
-import com.anakiou.mt.domain.Employee;
 
 @Configuration
 @EnableConfigurationProperties(JpaProperties.class)
@@ -45,6 +44,6 @@ public class MultiTenancyJpaConfiguration {
 		hibernateProps.put(Environment.MULTI_TENANT_IDENTIFIER_RESOLVER, currentTenantIdentifierResolver);
 		hibernateProps.put(Environment.DIALECT, "org.hibernate.dialect.PostgreSQLDialect");
 
-		return builder.dataSource(dataSource).packages(Employee.class.getPackage().getName()).properties(hibernateProps).jta(false).build();
+		return builder.dataSource(dataSource).packages(Consulta.class.getPackage().getName()).properties(hibernateProps).jta(false).build();
 	}
 }
