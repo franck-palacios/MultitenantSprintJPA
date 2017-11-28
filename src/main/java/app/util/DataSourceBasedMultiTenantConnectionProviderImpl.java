@@ -26,6 +26,24 @@ public class DataSourceBasedMultiTenantConnectionProviderImpl extends AbstractDa
     
     @Autowired
     private DataSource dataSource4;
+    
+    @Autowired
+    private DataSource dataSource5;
+    
+        @Autowired
+    private DataSource dataSource6;
+
+    @Autowired
+    private DataSource dataSource7;
+
+    @Autowired
+    private DataSource dataSource8;
+    
+    @Autowired
+    private DataSource dataSource9;
+    
+    @Autowired
+    private DataSource dataSource10;
 
     private Map<String, DataSource> map;
 
@@ -36,6 +54,12 @@ public class DataSourceBasedMultiTenantConnectionProviderImpl extends AbstractDa
         map.put("consultorio_2", dataSource2);
         map.put("consultorio_3", dataSource3);
         map.put("consultorio_4", dataSource4);
+        map.put("consultorio_5", dataSource5);
+        map.put("consultorio_6", dataSource6);
+        map.put("consultorio_7", dataSource7);
+        map.put("consultorio_8", dataSource8);
+        map.put("consultorio_9", dataSource9);
+        map.put("consultorio_10", dataSource10);
     }
 
     @Override
