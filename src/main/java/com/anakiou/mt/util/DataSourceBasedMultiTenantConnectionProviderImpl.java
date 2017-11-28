@@ -13,7 +13,7 @@ import java.util.Map;
 public class DataSourceBasedMultiTenantConnectionProviderImpl extends AbstractDataSourceBasedMultiTenantConnectionProviderImpl {
 
     private static final long serialVersionUID = 8168907057647334460L;
-    private static final String DEFAULT_TENANT_ID = "tenant_1";
+    private static final String DEFAULT_TENANT_ID = "consultorio_1";
 
     @Autowired
     private DataSource dataSource1;
@@ -23,18 +23,19 @@ public class DataSourceBasedMultiTenantConnectionProviderImpl extends AbstractDa
 
     @Autowired
     private DataSource dataSource3;
+    
+    @Autowired
+    private DataSource dataSource4;
 
     private Map<String, DataSource> map;
 
     @PostConstruct
     public void load() {
         map = new HashMap<>();
-        map.put("tenant_1", dataSource1);
-        map.put("tenant_2", dataSource2);
-        map.put("tenant_3", dataSource3);
-        map.put("tenant_4", dataSource1);
-        map.put("tenant_5", dataSource2);
-        map.put("otro", dataSource3);
+        map.put("consultorio_1", dataSource1);
+        map.put("consultorio_2", dataSource2);
+        map.put("consultorio_3", dataSource3);
+        map.put("consultorio_4", dataSource4);
     }
 
     @Override

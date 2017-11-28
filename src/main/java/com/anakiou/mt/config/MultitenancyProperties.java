@@ -15,7 +15,10 @@ public class MultitenancyProperties {
 
 	@NestedConfigurationProperty
 	private DataSourceProperties datasource3;
-
+        
+	@NestedConfigurationProperty
+	private DataSourceProperties datasource4;
+        
 	public DataSourceProperties getDatasource1() {
 		return datasource1;
 	}
@@ -38,6 +41,14 @@ public class MultitenancyProperties {
 
 	public void setDatasource3(DataSourceProperties datasource3) {
 		this.datasource3 = datasource3;
+	}
+
+        public DataSourceProperties getDatasource4() {
+		return datasource4;
+	}
+
+	public void setDatasource4(DataSourceProperties datasource4) {
+		this.datasource4 = datasource4;
 	}
 
 }
