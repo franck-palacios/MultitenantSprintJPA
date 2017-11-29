@@ -3,12 +3,13 @@ package app.util;
 import org.hibernate.engine.jdbc.connections.spi.AbstractDataSourceBasedMultiTenantConnectionProviderImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
+/*Principal clase que permite resolver la arquitectura multitenant, esta implementa una clase de Hibernate 
+que gestiona la fuente de datos a enviar por cada peticion*/
 @Component
 public class DataSourceBasedMultiTenantConnectionProviderImpl extends AbstractDataSourceBasedMultiTenantConnectionProviderImpl {
 
@@ -23,14 +24,14 @@ public class DataSourceBasedMultiTenantConnectionProviderImpl extends AbstractDa
 
     @Autowired
     private DataSource dataSource3;
-    
+
     @Autowired
     private DataSource dataSource4;
-    
+
     @Autowired
     private DataSource dataSource5;
-    
-        @Autowired
+
+    @Autowired
     private DataSource dataSource6;
 
     @Autowired
@@ -38,10 +39,10 @@ public class DataSourceBasedMultiTenantConnectionProviderImpl extends AbstractDa
 
     @Autowired
     private DataSource dataSource8;
-    
+
     @Autowired
     private DataSource dataSource9;
-    
+
     @Autowired
     private DataSource dataSource10;
 

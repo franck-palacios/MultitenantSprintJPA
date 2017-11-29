@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 
 import app.config.MultitenancyProperties;
 
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)//Necesario para que se utilice la configuracion MultiTenant de JPA
 @EnableConfigurationProperties(MultitenancyProperties.class)
 public class MultitenancyApplication {
 

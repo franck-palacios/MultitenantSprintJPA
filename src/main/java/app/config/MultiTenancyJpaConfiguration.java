@@ -18,6 +18,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
+/*Configuracion de JPA para MultiTenant, el proveedor de la conexion y 
+un identificador para la actual sesion a resolver*/
+
 @Configuration
 @EnableConfigurationProperties(JpaProperties.class)
 public class MultiTenancyJpaConfiguration {

@@ -4,6 +4,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
+//Para cada fuente de datos se agregan sus respectivos getter y setter
 @ConfigurationProperties("spring.multitenancy")
 public class MultitenancyProperties {
 
@@ -22,7 +23,7 @@ public class MultitenancyProperties {
         @NestedConfigurationProperty
 	private DataSourceProperties datasource5;
         
-        	@NestedConfigurationProperty
+        @NestedConfigurationProperty
 	private DataSourceProperties datasource6;
 
 	@NestedConfigurationProperty

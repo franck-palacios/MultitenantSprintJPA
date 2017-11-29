@@ -8,6 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/*Para cada fuente de datos MultiTenant se obtienen los principales datos para crear la conexion*/
 @Configuration
 public class DataSourceConfig {
 
