@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.anakiou</groupId>
-    <artifactId>mt</artifactId>
+    <groupId>app.multitenant</groupId>
+    <artifactId>ifg_gpo6</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>multitenancy</name>
-    <description>Demo project for Spring Boot with multi-tenancy support</description>
+    <name>multitenant</name>
+    <description>Multi-Tenant por Esquemas(Consultorios)</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -61,11 +61,4 @@
             </plugin>
         </plugins>
     </build>
-    <repositories>
-        <repository>
-            <id>unknown-jars-temp-repo</id>
-            <name>A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository.</name>
-            <url>file:${project.basedir}/lib</url>
-        </repository>
-    </repositories>
 </project>
